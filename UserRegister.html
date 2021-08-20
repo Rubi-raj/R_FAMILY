@@ -1,33 +1,29 @@
+<!DOCTYPE html>
 <html>
 	<title>User Registration</title>
 	<head>
-		<link rel="stylesheet" href="css/mystyle.css"/>
+		<link href="css/mystyle.css" rel="stylesheet"/>
+		<script src="js/myscript.js"> </script>
 	</head>
-	<script>
-	 function changeToUpperCase(obj)
-	 {
-     	obj.value=obj.value.toUpperCase();
-     }
-	</script>
-	<body class="font">
+	<body class="font" >
 		<fieldset>
-			<legend class="font-legend">Registrati</legend>
+			<legend class="font-legend">Registration</legend>
 			<form action="action.java">
 				<div>
-					<label class="required">First Name</label>
-					<input name="first_name" type="text" placeholder="First Name" align="center" onchange="changeToUpperCase(this)" autofocus required/>
+					<label class="required" fro="first_name">First Name</label>
+					<input name="first_name" type="text" placeholder="First Name" onchange="changeToUpperCase(this)" autofocus required>
 				</div>
 				<div>
-					<label class="required">Last Name</label>
-					<input name="last_name" type="text" placeholder="Last Name" onchange="changeToLowerCase(this)" required/>
+					<label class="required" for="last_name">Last Name</label>
+					<input name="last_name" type="text" placeholder="Last Name" minlength="4">
 				</div>
-				<div>
-					<label class="required">Email</label>
-					<input name="email" type="email" placeholder="Email" required/>
-				</div>
-				<div>
-					<label>Gender</label>
-					<select name="gender">
+					<div>
+						<label class="required" for="email">Email</label>
+						<input name="email" type="email" placeholder="Email" required>
+					</div>
+					<div>
+						<label for="name" class="required">Gender</label>
+						<select name="gender" required>
 						<option value="male">Male</option>
 						<option value="female">Female</option>
 						<option value="others">Others</option>
@@ -35,12 +31,12 @@
 				</div>
 				<div>
 					<label class="required">Date Of Birth</label>
-					<input name="dob" type="date" min="1970-01-01" required/>
+					<input name="dob" type="date" min="1970-01-01" required>
 				</div>
 				<div>
-					<input type="submit" value="Register"/>
+					<input type="submit" value="Register">
 				</div>
-			</form>
-		</fieldset>
-	</body>
-</html>
+				</form>
+			</fieldset>
+		</body>
+	</html>

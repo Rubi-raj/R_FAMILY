@@ -3,6 +3,12 @@ body {
   background-color: linen;
 }
 
+label {
+  cursor: default;
+}
+
+input {margin:5px;}
+
 /* Manadatory fields */
 .required:after {
     content: " *";
